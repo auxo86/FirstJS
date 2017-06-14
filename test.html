@@ -1,0 +1,21 @@
+<html>
+    <head>   
+        <script>
+            function openurl() {
+            var url = "http://www.google.com" ;
+            var url1 = "./index.html"
+            if (!window.winvar || winvar.closed){
+                winvar = window.open(url);
+                }
+            else 
+                winvar.location = url1;
+            }
+        </script>
+    </head>
+    <body >
+        <form>
+            <input type=button value="Open URL in one window only"
+                    onclick="openurl()">
+        </form>
+    </body>
+</html>
