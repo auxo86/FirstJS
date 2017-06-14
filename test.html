@@ -6,6 +6,7 @@
             var url1 = "./index.html"
             if (!window.winvar || winvar.closed){
                 winvar = window.open(url);
+                document.title = "test";
                 }
             else 
                 winvar.location = url1;
